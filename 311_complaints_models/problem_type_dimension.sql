@@ -1,3 +1,8 @@
+ {{
+      config(
+          materialized='table'
+      )
+}}
 WITH problem_type_columns AS
 (
     SELECT DISTINCT problem_type, problem_detail
