@@ -1,6 +1,6 @@
-  name: CIS_4400_Spring_2026_Project
+  name: 311 Complaint Data
   version: 1.0.0
   profile: Bigquery
   models:
-    CIS_4400_Spring_2026_Project:
+    311 Complaint Data:
       +materialized: table
