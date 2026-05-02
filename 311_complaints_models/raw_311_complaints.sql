@@ -1,7 +1,16 @@
- {{
-      config(
-          materialized='table'
-      )
-}}
-SELECT *
-FROM '311_complaints_models'
+{{ config(materialized='table') }}
+
+SELECT
+  `Unique Key` AS unique_key,
+  `Created Date` AS created_date,
+  `Closed Date` AS closed_date,
+  `Agency Name` AS agency_name,
+  `Problem _formerly Complaint Type_` AS problem_type,
+  `Problem Detail _formerly Descriptor_` AS problem_detail,
+  `Location Type` AS location_type,
+  `Incident Zip` AS incident_zip,
+  `Incident Address` AS incident_address,
+  City AS city,
+  Borough AS borough,
+  CURRENT_TIMESTAMP() AS loaded_at
+FROM `complaint-data.311_Noise_Complaint.311_Noise_Complaint`
