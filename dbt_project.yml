@@ -1,6 +1,7 @@
-name: 311 Complaint Data
-version: 1.0.0
+name: complaint_data_311
+version: "1.0.0"
 profile: Bigquery
+
 models:
-  311 Complaint Data:
+  complaint_data_311:
     +materialized: table
