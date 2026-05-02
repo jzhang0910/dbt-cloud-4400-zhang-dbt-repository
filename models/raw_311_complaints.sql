@@ -13,4 +13,4 @@ SELECT
   City AS city,
   Borough AS borough,
   CURRENT_TIMESTAMP() AS loaded_at
-FROM `311 Complaint Data.311_Noise_Complaint.311_Noise_Complaint`
+FROM `complaint-data-495016.311_Noise_Complaint.311_Noise_Complaint`
