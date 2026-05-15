@@ -4,7 +4,7 @@ WITH location_columns AS (
     select DISTINCT
         borough,
         incident_zip,
-        locaiton_type,
+        location_type,
         city,
         incident_address
     FROM {{ref('raw_311_complaints')}}
