@@ -26,4 +26,5 @@ ORDER BY
     borough,
     incident_zip,
     city,
-    incident_address
+    incident_address,
+    location_type
