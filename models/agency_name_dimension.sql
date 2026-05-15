@@ -1,3 +1,5 @@
+{{ config(materialized='table')}}
+
 WITH agency_name_columns AS
 (
     SELECT DISTINCT 
